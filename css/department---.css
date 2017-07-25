@@ -1,0 +1,217 @@
+@charset "UTF-8";
+body, div, span,tbody,thead,a {
+	font-size: 14px;
+}
+
+a{
+	text-decoration: none;
+}
+/*主页*/
+
+/*头部样式*/
+.index-head{
+	height: 80px;
+	border: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+.accordion{
+	text-align: right;
+	height: 100%;
+	background:url('../img/webBg.png') repeat;
+}
+/*logo样式*/
+.accordion .logo{
+	float: left;
+	margin-left: 10px;
+}
+/*员工信息*/
+.accordion .quit1{
+	float: right;
+	margin-top: 25px;
+	font-size: 15px;
+	font-family: "Adobe 黑体 Std R";
+}
+.accordion .quit2{
+	margin-top: 55px;
+}
+
+/*菜单栏*/
+#pic{
+	height: 30px;
+	padding: 4px;
+	background-color: rgb(224,236,255);
+}
+#pic span{
+	font-size: 14px;
+}
+
+#frame_accordion ul li{
+	height: 25px;
+}
+
+#frame_accordion ul li a{
+	color: inherit;
+}
+
+/*新建档案页面*/
+
+/*工具栏*/
+#tb .table{
+	font-size: 14px;
+	float: left;
+}
+#tb .table a{
+	border: 1px solid rgb(149,184,231);
+	border-radius:5px;
+	width: 100px;
+}
+#tb #set{
+	margin-right: 13px;
+	display: inline-block;
+	float: right;
+}
+#tb #set a{
+	border: 1px solid rgb(149,184,231);
+	border-radius:5px;
+}
+/*清除浮动*/
+.clear{
+	clear: both;
+}
+/*表格*/
+.edit{
+	width: 97%;
+	height: 150px;
+	margin: 0 auto;
+}
+/*弹出表格样式*/
+.table2{
+	margin:10px 20px 10px 30px;
+}
+.table2 .text{
+	width:108px;
+	height: 19px;
+	border-radius:5px;
+	border: 1px solid rgb(149,184,231);
+}
+.table2 .btn-add{
+	margin-left: 30px;
+}
+.table2 .btn-add a{
+	border: 1px solid rgb(149,184,231);
+}
+
+/*档案封箱页面*/
+/*头部*/
+.header{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*头部工具栏*/
+.header .r-top{
+	width: 260px;
+	margin:10px 0px 10px 25px;
+	display: inline;
+}
+.header .r-top .number{
+	width:70px;
+	height: 19px;
+	border-radius:5px;
+	border: 1px solid rgb(149,184,231);
+}
+.header .r-top a{
+	border: 1px solid rgb(149,184,231);
+	border-radius:5px;
+	width: 100px;
+}
+.header .r-top2{
+	float: right;
+	margin-right: 25px;
+}
+.header .r-top2 a{
+	border: 1px solid rgb(149,184,231);
+	border-radius:5px
+}
+
+/*清除浮动*/
+.clear{
+	clear: both;
+}
+
+/*上面表格*/
+.sealing-top{
+	width: 97%;
+	height: 40%;
+	margin: 0 auto;
+}
+/*下面表格*/
+.sealing-bottom{
+	width: 97%;
+	height: 60%;
+	margin: 0 auto;
+}
+.table-bottom .header-bottom{
+	float: right;
+	margin-right: 25px;
+}
+/*清除浮动*/
+.clear{
+	clear: both;
+}
+
+/*工具栏*/
+.table-bottom .header-bottom a {
+	border: 1px solid rgb(149,184,231);
+	border-radius:5px;
+	margin-bottom: 10px;
+}
+
+/*弹出表格样式*/
+#win form{
+	padding:10px 20px 10px 40px;
+}
+#win form p{
+	font-size: 14px;
+}
+#win form .message{
+	padding:5px;
+	text-align:center;
+}
+#form1 .table3{
+	margin: 10px 10px 10px 10px;
+}
+
+#form1 .table3 .text1{
+	width:85px;
+	height: 19px;
+	border-radius:5px;
+	border: 1px solid rgb(149,184,231);
+}
+
+#form1 .form2{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*档案移交页面*/
+/*工具栏*/
+
+.turn-toolbar{
+	margin-left: 25px;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+.turn-toolbar a{
+	border: 1px solid rgb(149,184,231);
+	border-radius:5px;
+	width: 50px;
+}
+
+.turn-table{
+	width: 97%;
+	height: 40%;
+	margin: 0 auto;
+}

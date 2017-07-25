@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "url": "javascript:void(0)",
+    "title": "网点分布",
+    "state": "closed",
+    "children": [
+      {
+        "id": 2,
+        "parentId": 1,
+        "url": "page/ditu-all.html",
+        "text": "全部网点",
+        "checked": false,
+        "state": null
+      },
+      {
+        "id": 3,
+        "parentId": 1,
+        "url": "page/ditu-lishi.html",
+        "text": "预警历史",
+        "checked": false,
+        "state": null
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "url": "javascript:void(0)",
+    "title": "用户维护",
+    "state": "closed",
+    "children": [
+      {
+        "id": 12,
+        "parentId": 1,
+        "url": "page/user/new.html",
+        "text": "添加客户",
+        "checked": false,
+        "state": null
+      },
+      {
+        "id": 13,
+        "parentId": 1,
+        "url": "page/user/index.html",
+        "text": "用户列表",
+        "checked": false,
+        "state": null
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "url": "javascript:void(0)",
+    "title": "客户维护",
+    "state": "closed",
+    "children": [
+      {
+        "id": 22,
+        "parentId": 1,
+        "url": "page/company/info.html",
+        "text": "公司信息",
+        "checked": false,
+        "state": null
+      },
+      {
+        "id": 23,
+        "parentId": 1,
+        "url": "page/company/add.html",
+        "text": "添加账号",
+        "checked": false,
+        "state": null
+      },
+      {
+        "id": 33,
+        "parentId": 1,
+        "url": "page/company/index.html",
+        "text": "子公司列表",
+        "checked": false,
+        "state": null
+      }
+    ]
+  }
+]

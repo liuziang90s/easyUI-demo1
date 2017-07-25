@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>部门操作员</title>
+    <script type="text/javascript" src="js/jquery-easyui/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var ajaxNew = function(){
+                var url = "index.json";
+                //				var data = {type:1};
+                $.ajax({
+                    type : "get",
+                    async : false, //同步请求
+                    url : url,
+                    dataType:"json",
+                    //				data : data,
+                    timeout:1000,
+                    success:function(dates){
+                        var len=dates.length;
+                        for(var i=0;i<len;i++){
+                            var title=dates[i].title;
+                            var len1=dates[i].children.length;
+                            var children=dates[i].children;
+                            $("#frame_accordion").append('<div title='+title+' style="overflow:auto;padding:10px;"><ul class="easyui-tree"></ul></div>');
+                            for(var n=0;n<len1;n++){
+//									console.log(len1);
+                                var url_1=children[n].url,
+                                        text=children[n].text;
+                                $(".easyui-tree").eq(i).append('<li><a href="javascript:void(0)" data-link='+url_1+'>'+text+'</a></li>');
+                            }
+                        }
+                    },
+                    error: function() {
+                        // alert("失败，请稍后再试！");
+                    }
+                });
+            }
+            ajaxNew();
+        })
+    </script>
+    <link rel="stylesheet" type="text/css" href="js/jquery-easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="js/jquery-easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-easyui/jquery.easyui.min.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+   <!--给body指定class属性指定easy的easyui-layout样式，这样就可以 使用body创建easyui的layout -->
+  <body class="easyui-layout">
+       <!-- 布局中如果不需要north这个面板，那么可以删掉这个div --> 
+    <div data-options="region:'north',title:'North Title',split:true" style="height:100px;">
+        <div class="accordion">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="quit1">
+                <span class="text">您好，admin&nbsp;|</span>
+                <a href="login.html">退出<strong>&nbsp;</strong></a>
+            </div>
+            <div class="quit2">
+                <span class="text"><b>工号</b>：10001<strong>&nbsp;</strong><strong>&nbsp;</strong><strong>&nbsp;</strong></span>
+                <span class="text"><b>姓名</b>：霸天虎<strong>&nbsp;</strong><strong>&nbsp;</strong><strong>&nbsp;</strong></span>
+                <span class="text"><b>所属部门</b>：交通指挥中心<strong>&nbsp;</strong></span>
+            </div>
+        </div>
+    </div>
+     <!-- 布局中如果不需要south这个面板，那么可以删掉这个div -->   
+     <div data-options="region:'south',title:'South Title',split:true" style="height:100px;"></div> 
+     <!-- 布局中如果不需要east这个面板，那么可以删掉这个div -->   
+ <!--<div data-options="region:'east',iconCls:'icon-reload',title:'East',split:true" style="width:100px;"></div>-->
+  <!-- 布局中如果不需要west这个面板，那么可以删掉这个div -->  
+  <div data-options="region:'west',title:'West',split:true" style="width:100px;">
+      <div class="easyui-layout" data-options="fit:true">
+          <div data-options="region:'center'">
+              <div id="frame_accordion" class="easyui-accordion" data-options="fit:true">
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--north，south， east，west这几个面板都可以删掉，唯有这个center面板一定不能删掉，否则使用easyui-layout就会出错 --> 
+  <div data-options="region:'center',title:'center title',href:'center.html'" style="padding:5px;">
+      <div class="easyui-tabs" id="frame_tabs" style="overflow: hidden;background-color: #f3f3f3;"
+           data-options="fit:true,border:false,plain:true">
+          <div title="首页" style="overflow: hidden;">
+              <iframe scrolling="auto" frameborder="0"  src="page/ditu-jing.html" style="width:100%;height:99%;"></iframe>
+          </div>
+      </div>
+  </div>
+</body>  
+  
+</html>

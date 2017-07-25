@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*档案类型管理页面*/
+/*左边部分*/
+.left{
+    width: 99%;
+    display: inline;
+    float: left;
+}
+/*查询条件*/
+.left .head-left{
+    margin-left: 25px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    font-size: 14px;
+}
+.left .menu-left{
+    width: 260px;
+    display: inline;
+}
+.left .menu-left .type{
+    width:70px;
+    height: 19px;
+    border-radius:5px;
+    border: 1px solid rgb(149,184,231);
+}
+/*添加、删除按钮*/
+.left .menu-left a{
+    border: 1px solid rgb(149,184,231);
+    border-radius:5px;
+    width: 100px;
+}
+.left .btn-middle{
+    display: inline;
+    float: right;
+}
+.left .btn-middle a {
+    border: 1px solid rgb(149,184,231);
+    border-radius:5px;
+}
+/*左边表格*/
+.table-left{
+    float: left;
+    width: 98%;
+    margin-left: 25px;
+}
+/*右边部分*/
+
+/*右边工具栏*/
+
+.right .head-right{
+    display: inline-block;
+    margin: 10px 0px 10px 15px;
+}
+.right .head-right a{
+    border: 1px solid rgb(149,184,231);
+    border-radius:5px;
+}
+.right .table-right{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
